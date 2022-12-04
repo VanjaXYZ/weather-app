@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  background-image: url("img/sunnyDay.jpg");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.weather-app {
+  width: 650px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  padding: 30px;
+  backdrop-filter: blur(12px);
+  border-radius: 10px 2px 10px 2px;
+  box-shadow: inset 0 0 50px rgb(117, 187, 236);
+}
+
+.weather-app input {
+  width: 100%;
+  max-width: 320px;
+  margin: 20px;
+  font-size: 2em;
+  padding: 8px;
+  outline: none;
+  border: 1px solid lightcyan;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 10px 2px 10px 2px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+}
+
+.weather-app input::placeholder {
+  color: rgba(88, 75, 75, 0.4);
+}
+
+.weather-app button {
+  padding: 6px 10px;
+  font-size: 1.2em;
+  color: #fff;
+  font-weight: 900;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(50px);
+  border: 1px solid skyblue;
+  border-radius: 10px 2px 10px 2px;
+  cursor: pointer;
+  margin: 20px 0;
+  margin-bottom: 40px;
+  transition: text-shadow 0.2s ease-out;
+}
+
+.weather-app button:hover {
+  text-shadow: 2px -2px 2px rgb(10, 10, 10);
+}
+
+.weather-app button:active {
+  translate: 0 1px;
+}
+
+.weather-app .location {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.location #city {
+  font-size: 4em;
+  margin-bottom: 30px;
+  backdrop-filter: blur(30px);
+  padding: 12px;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 10px 2px 10px 2px;
+  text-shadow: 3px -3px 2px rgb(10, 10, 10);
+}
+
+.location #temp {
+  font-size: 3em;
+  margin-bottom: 30px;
+  backdrop-filter: blur(30px);
+  padding: 12px;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 10px 2px 10px 2px;
+  text-shadow: 3px -3px 2px rgb(10, 10, 10);
+}
+
+.weather-app .weatherType {
+  display: flex;
+  align-items: center;
+}
+
+.weatherType #weather {
+  font-size: 2em;
+  color: rgb(50, 130, 235);
+  font-weight: 600;
+  text-shadow: 2px -2px 2px rgb(10, 10, 10);
+}
